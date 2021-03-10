@@ -13,6 +13,7 @@ import javafx.scene.control.Alert.AlertType;
 import javafx.scene.control.Button;
 import javafx.scene.control.ButtonType;
 import javafx.scene.control.Label;
+import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.Pane;
 import javafx.scene.layout.StackPane;
 import javafx.scene.paint.Color;
@@ -71,7 +72,7 @@ public class tictactoe extends Application {
 			id_box=id;
 		    Rectangle border = new Rectangle(height,width);
 		    border.setStroke(Color.BLACK);
-		    border.setFill(Color.TRANSPARENT);
+		    border.setFill(Color.PINK);
 		    setAlignment(Pos.CENTER);
 		    /*adding label-text properties ->font size and color */
 		    
@@ -83,12 +84,47 @@ public class tictactoe extends Application {
 		    btnO.setTranslateY(70);
 		    btnX.setTranslateX(23);
 		    btnX.setTranslateY(70);
-//		    btnO.setStyle("-fx-background-color: #00ff00");
-//		    btnX.setStyle("-fx-background-color: #00ff00");
+//		    btnO.setStyle("-fx-background-color: #000000");
+//		    btnX.setStyle("-fx-background-color: #800080");
 		    btnO.setMinWidth(50);
 		    btnX.setMinWidth(50);
 		    /*Event handling of Buttons*/
-		    
+//		    border.setOnMouseClicked(event->{
+//
+//			//	@Override
+//			//	public void handle(MouseEvent arg0) {
+//					if(used) return;
+//		            
+//		            else if(used_X){
+//		            Put_O();	
+//		            used=true;
+//		        	used_O=true;
+//		        	used_X=false;
+//		        	fill_boxes();
+//		        	count++;
+//		        	win_X();
+//		        	win_O();
+//		        	Draw();
+//		            }
+//		        	if(used_O) {
+//		        		Put_X();
+//			            used=true;
+//			            used_X=true;
+//			            used_O=false;
+//			            fill_boxes();
+//			            count++;
+//			            win_X();
+//			        	win_O();
+//			            Draw();     	
+//			           
+//		        		
+//		        	}
+//					
+//				//}
+//		    	
+//		    });
+//		   
+//		    
 		    btnO.setOnAction(new EventHandler<ActionEvent>() {
 
 		        @Override
@@ -131,7 +167,7 @@ public class tictactoe extends Application {
 	        }
 	    });
 	    	 // adding the border to the stackpane aka container
-		    getChildren().addAll(border,label,btnO,btnX);
+		  getChildren().addAll(border,label,btnO,btnX);
 		    
 		    
 		}
@@ -210,7 +246,7 @@ public void win_O() {
 	 win1= O_box.contains(0) && O_box.contains(3) && O_box.contains(6);	
 	 win2=O_box.contains(2) && O_box.contains(5) && O_box.contains(8);
 	 win3=O_box.contains(6) && O_box.contains(7) && O_box.contains(8);
-     if( win0 || win1 || win2) {
+     if( win0 || win1 || win2 || win3) {
     	 draw=false;
      System.out.print("WINNER IS O!");
   // create a alert 
