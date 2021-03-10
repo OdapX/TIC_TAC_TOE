@@ -89,42 +89,7 @@ public class tictactoe extends Application {
 		    btnO.setMinWidth(50);
 		    btnX.setMinWidth(50);
 		    /*Event handling of Buttons*/
-//		    border.setOnMouseClicked(event->{
-//
-//			//	@Override
-//			//	public void handle(MouseEvent arg0) {
-//					if(used) return;
-//		            
-//		            else if(used_X){
-//		            Put_O();	
-//		            used=true;
-//		        	used_O=true;
-//		        	used_X=false;
-//		        	fill_boxes();
-//		        	count++;
-//		        	win_X();
-//		        	win_O();
-//		        	Draw();
-//		            }
-//		        	if(used_O) {
-//		        		Put_X();
-//			            used=true;
-//			            used_X=true;
-//			            used_O=false;
-//			            fill_boxes();
-//			            count++;
-//			            win_X();
-//			        	win_O();
-//			            Draw();     	
-//			           
-//		        		
-//		        	}
-//					
-//				//}
-//		    	
-//		    });
-//		   
-//		    
+
 		    btnO.setOnAction(new EventHandler<ActionEvent>() {
 
 		        @Override
