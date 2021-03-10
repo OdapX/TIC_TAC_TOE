@@ -117,7 +117,7 @@ public class tictactoe extends Application {
 	        	if(used) return;
 	        	if(used_X) return;
 	        	btnX.setStyle("-fx-text-fill: #FFFFFF");
-	        	btnX.setStyle("-fx-background-color: #0000FF");
+	        	btnX.setStyle("-fx-background-color: #ff0000");
 	        	
 	        	Put_X();
 	            used=true;
@@ -139,11 +139,13 @@ public class tictactoe extends Application {
 		
 		private void Put_X() {
 			 label.setText("X");
+			 label.setTextFill(Color.web("#ff0000", 1));
 			 title=1;
 			 
 		    }
 		private void Put_O() {
 			 label.setText("O");
+			 label.setTextFill(Color.web("green", 1));
               title=0;
 		    }
 		
