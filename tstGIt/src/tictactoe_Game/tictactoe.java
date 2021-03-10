@@ -79,7 +79,6 @@ public class tictactoe extends Application {
 		    label.setTextFill(Color.web("#0076a3"));
 		    
 		    /* putting the buttons at the buttom of the box*/
-		    
 		    btnO.setTranslateX(-28);
 		    btnO.setTranslateY(70);
 		    btnX.setTranslateX(23);
