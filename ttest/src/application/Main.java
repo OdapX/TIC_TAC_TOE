@@ -19,7 +19,7 @@ public class Main extends Application   {
         Parent root = FXMLLoader.load(getClass().getClassLoader().getResource("application/Ddd.fxml"));
         Scene scene = new Scene(root);
         stage.setScene(scene);
-        stage.setTitle("Fracken");
+        stage.setTitle("TIC_TAC_TOE");
         stage.show();
         
     }
