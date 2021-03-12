@@ -71,7 +71,7 @@ public class tictactoe extends Application {
 			id_box=id;
 		    Rectangle border = new Rectangle(height,width);
 		    border.setStroke(Color.BLACK);
-		    border.setFill(Color.PINK);
+		    border.setFill(Color.TAN);
 		    setAlignment(Pos.CENTER);
 		    /*adding label-text properties ->font size and color */
 		    

@@ -10,7 +10,7 @@
    <children>
       <ImageView fitHeight="538.0" fitWidth="664.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../../../Downloads/tictac.jpg" />
+            <Image url="@../../../../../Downloads/tictac.jpg" />
          </image>
       </ImageView>
       <Button layoutX="139.0" layoutY="331.0" mnemonicParsing="false" onMouseClicked="#handle" prefHeight="44.0" prefWidth="387.0" style="-fx-background-color: orange;" text="START" textFill="#fffbfb">
